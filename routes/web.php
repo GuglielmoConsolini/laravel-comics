@@ -44,3 +44,12 @@ Route::get('/home',function(){
 
     return view('welcome',$data);
 });
+
+//ROTTA PER about.blade.php
+
+Route::get('/credits',function(){
+
+    $comics = config("store");
+
+    return view('about',['comics'=> $comics]);
+});
