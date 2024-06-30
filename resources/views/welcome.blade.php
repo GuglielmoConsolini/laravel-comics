@@ -7,7 +7,11 @@
     <title>Laravel Comics</title>
 </head>
 <body>
-    <h1>Iniziamo con Laravel</h1>
+    <h1>{{$saluto}}</h1>
+
+    <p>{{$descrizione}}</p>
+
+    <p>{{$copyright}}</p>
     
 </body>
 </html>
