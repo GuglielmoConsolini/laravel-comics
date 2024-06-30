@@ -17,10 +17,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
+    $comics = config("store");
+
     $data = [
       "saluto" => "Benvenuti in Laravel",
       "descrizione" => "Nella home avrai alcuni esempi di fumetti che vanno per la maggiore , cosa aspetti a ordinarli?",
       "copyright" => "(c) 1994 Wizards of the Coast Inc. All right reserved.",
+      "comics" => $comics
     ];
     return view('welcome',$data);
 });
@@ -34,6 +37,10 @@ Route::get('/home',function(){
     $copyright = "(c) 1994 Wizards of the Coast Inc. All right reserved.";
 
     $data = compact("saluto","descrizione","copyright");
+
+    $comics = config("store");
+
+    $data['comics'] = $comics;
 
     return view('welcome',$data);
 });
