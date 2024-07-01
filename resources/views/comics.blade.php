@@ -2,9 +2,8 @@
 
 
 
-@section('cardsSections')
+@section('cardsSection')
 
-  <p>{{$descrizione}}</p>
 
   <h2>Fumetti disponibili</h2>
 
@@ -20,5 +19,5 @@
         </div>
     @endforeach
   </div>
-    
+ 
 @endsection

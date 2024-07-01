@@ -33,7 +33,7 @@ Route::get('/', function () {
 Route::get('/comics',function(){
 
     $saluto = "Benvenuti in Laravel";
-    $descrizione = "Nella home avrai alcuni esempi di fumetti che vanno per la maggiore , cosa aspetti a ordinarli?";
+    $descrizione = "Nella Sezione Fumetti avrai alcuni esempi di fumetti che vanno per la maggiore , cosa aspetti a ordinarli?";
     $copyright = "(c) 1994 Wizards of the Coast Inc. All right reserved to Guglielmo.";
 
     $data = compact("saluto","descrizione","copyright");
@@ -41,7 +41,7 @@ Route::get('/comics',function(){
     $comics = config("store");
 
     $data['comics'] = $comics;
-
+    
     return view('comics',$data);
 })->name("fumetti");
 
