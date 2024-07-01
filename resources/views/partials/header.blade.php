@@ -7,9 +7,9 @@
     </div>
 
     <nav>
-        <a href="{{ route("home") }}">HOME</a>
-        <a href="{{ route("about") }}">ABOUT</a>
-        <a href="{{ route("fumetti") }}">FUMETTI</a>
+        <a href="{{ route("home") }}" class="{{ Route::currentRouteName() == 'home' ? 'active' : '' }}">HOME</a>
+        <a href="{{ route("about") }}"class="{{ Route::currentRouteName() == 'about' ? 'active' : '' }}">ABOUT</a>
+        <a href="{{ route("fumetti") }}"class="{{ Route::currentRouteName() == 'fumetti' ? 'active' : '' }}">FUMETTI</a>
     </nav>
 
 </header>
