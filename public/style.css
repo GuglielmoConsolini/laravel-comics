@@ -20,7 +20,7 @@ body{
     border-radius: 8px;
     padding: 16px;
     margin: 16px;
-    width: 300px;
+    width: 300px;   
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .card img {
@@ -33,4 +33,35 @@ body{
 }
 .card p {
     margin: 8px 0;
+}
+
+a {
+    color: coral;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #444;
+    padding: 1rem;
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+header nav > a {
+    margin: 0 0.3rem;
+}
+
+.content-wrapper {
+    padding: 1rem;
+}
+
+footer{
+    padding: 1rem;
+    background-color: #444;
 }

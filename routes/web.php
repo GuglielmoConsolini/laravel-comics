@@ -22,11 +22,11 @@ Route::get('/', function () {
     $data = [
       "saluto" => "Benvenuti in Laravel",
       "descrizione" => "Nella home avrai alcuni esempi di fumetti che vanno per la maggiore , cosa aspetti a ordinarli?",
-      "copyright" => "(c) 1994 Wizards of the Coast Inc. All right reserved.",
+      "copyright" => "(c) 1994 Wizards of the Coast Inc. All right reserved to Guglielmo.",
       "comics" => $comics
     ];
     return view('welcome',$data);
-});
+})->name("home");
 
 //ROTTA CON METODO COMPACT
 
@@ -34,7 +34,7 @@ Route::get('/home',function(){
 
     $saluto = "Benvenuti in Laravel";
     $descrizione = "Nella home avrai alcuni esempi di fumetti che vanno per la maggiore , cosa aspetti a ordinarli?";
-    $copyright = "(c) 1994 Wizards of the Coast Inc. All right reserved.";
+    $copyright = "(c) 1994 Wizards of the Coast Inc. All right reserved to Guglielmo.";
 
     $data = compact("saluto","descrizione","copyright");
 
@@ -43,7 +43,7 @@ Route::get('/home',function(){
     $data['comics'] = $comics;
 
     return view('welcome',$data);
-});
+})->name("fumetti");
 
 //ROTTA PER about.blade.php
 
@@ -52,4 +52,4 @@ Route::get('/credits',function(){
     $comics = config("store");
 
     return view('about',['comics'=> $comics]);
-});
+})->name("about");
