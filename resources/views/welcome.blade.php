@@ -14,7 +14,7 @@
 
     <h2>Fumetti disponibili</h2>
     
-    <div class="comics-container">
+    {{-- <div class="comics-container">
         @foreach($comics as $comic)
             <div class="card">
                 <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
@@ -25,7 +25,7 @@
                 <p>{{ $comic['description'] }}</p>
             </div>
         @endforeach
-    </div>
+    </div> --}}
 
     @include('partials.footer')
     

@@ -30,7 +30,7 @@ Route::get('/', function () {
 
 //ROTTA CON METODO COMPACT
 
-Route::get('/home',function(){
+Route::get('/comics',function(){
 
     $saluto = "Benvenuti in Laravel";
     $descrizione = "Nella home avrai alcuni esempi di fumetti che vanno per la maggiore , cosa aspetti a ordinarli?";
