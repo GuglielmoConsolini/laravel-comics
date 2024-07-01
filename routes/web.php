@@ -42,7 +42,7 @@ Route::get('/comics',function(){
 
     $data['comics'] = $comics;
 
-    return view('welcome',$data);
+    return view('comics',$data);
 })->name("fumetti");
 
 //ROTTA PER about.blade.php

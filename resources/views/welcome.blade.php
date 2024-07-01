@@ -8,7 +8,7 @@
     <title>Laravel Comics</title>
 </head>
 <body>
-    @include('partials.header')
+    {{-- @include('partials.header') --}}
 
     <p>{{$descrizione}}</p>
 
